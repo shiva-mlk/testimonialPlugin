@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+    jQuery(document).ready(function(){
+        jQuery('ul.tabNav a').click(function() {
+            var curChildIndex = jQuery(this).parent().prevAll().length + 1;
+            jQuery(this).parent().parent().children('.current').removeClass('current');
+            jQuery(this).parent().addClass('current');
+            jQuery(this).parent().parent().next('.tabContainer').children('.current').slideUp('fast',function() {
+                jQuery(this).removeClass('current');
+                jQuery(this).parent().children('div:nth-child('+curChildIndex+')').slideDown('normal',function() {
+                    jQuery(this).addClass('current');
+                });
+            });
+            return false;								
+        });			
+    
+    jQuery('#upload-btn').click(function(){
+        
+                        image_custom_uploader = wp.media({
+                            title: 'Choose Image',
+                            button: { text: 'Choose Image'},multiple:false
+                        }).open();
+                            
+                           image_custom_uploader.on('select',function(html){
+                                    attachment = image_custom_uploader.state().get('selection').first().toJSON();
+     var image_url = '';
+     image_url = attachment['url'];
+     
+                                    jQuery('#image_url').val(image_url); 
+                                    jQuery('#image_image').attr('src',image_url);    
+                           });
+    
+     });
+    
+    jQuery('#second_upload-btn').click(function(){
+        
+                        image_custom_uploader = wp.media({
+                            title: 'Choose Image',
+                            button: { text: 'Choose Image'},multiple:false
+                        }).open();
+                            
+                           image_custom_uploader.on('select',function(html){
+                                    attachment = image_custom_uploader.state().get('selection').first().toJSON();
+     var image_url = '';
+     image_url = attachment['url'];
+     
+                                    jQuery('#second_image_url').val(image_url); 
+                                    jQuery('#second_image_image').attr('src',image_url);    
+                           });
+    
+     });
+    });
+    </script> -->
+    <div class="testimonial-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel test-slides text-center" id="testimonial-carousel">
+                        <div class="item">
+                            <div class="single-testimonial">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="./images/1.jpg" alt="" class="d-block w-100 rounded-circle">
+                                </div>
+                                <blockquote class=" m-4">
+                                    Minimalism and simplicity are the two expressions that surround the Testimonial Carousel slider. Displaying testimonials doesn’t always need fancy stuff. 
+                                  </blockquote>
+                                <h5 class="py-1 my-1"><strong class="text-primary text-uppercase">jack</strong></h5>
+                                <h6 class="text-dark m-1"> developer</h6>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-testimonial">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="./images/2.jpg" alt="" class="d-block w-100 rounded-circle">
+                                </div>
+                                <blockquote class=" m-4">
+                                    In a completely rational society, the best of us would be teachers
+                                    and the rest of us would have to settle for something else.
+                                  </blockquote>
+                                <h5 class="py-1 my-1"><strong class="text-primary text-uppercase">bel</strong></h5>
+                                <h6 class="text-dark m-1"> programmer</h6>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-testimonial">
+                                <div class="img-box border rounded-circle m-auto">
+                                    <img src="./images/3.jpg" alt="" class="d-block w-100 rounded-circle">
+                                </div>
+                                <blockquote class=" m-4">
+                                    In a completely rational society, the best of us would be teachers
+                                    and the rest of us would have to settle for something else.
+                                  </blockquote>
+                                <h5 class="py-1 my-1"><strong class="text-primary text-uppercase">eli</strong></h5>
+                                <h6 class="text-dark m-1"> web designer</h6>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-testimonial">
+                            <div class="img-box border rounded-circle m-auto">
+                                    <img src="./images/4.jpg" alt="" class="d-block w-100 rounded-circle">
+                                </div>
+                                <blockquote class=" m-4">
+                                    In a completely rational society, the best of us would be teachers
+                                    and the rest of us would have to settle for something else.
+                                  </blockquote>
+                                <h5 class="py-1 my-1"><strong class="text-primary text-uppercase">Paul</strong></h5>
+                                <h6 class="text-dark m-1"> python programmer</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('#testimonial-carousel').owlCarousel({
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+    </script>
+</body>
+</html>

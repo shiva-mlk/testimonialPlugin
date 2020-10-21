@@ -1,0 +1,38 @@
+.testimonial-area .container-fluid{
+    padding: 100px;
+    background-color: #fff;
+}
+#testimonial-carousel .item .img-box{
+    width: 135px;
+    height: 135px;
+}
+div.owl-nav{
+    color: c0c0BA;
+    display: inline-block;
+    font-size: 50px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+}
+.owl-prev{
+    position: absolute;
+    left: -20px;
+    top: 100px;
+}
+.owl-next{
+    position: absolute;
+    right: -20px;
+    top: 100px;
+}
+img{
+  width: 135px;
+    height: 135px;
+}
+blockquote{
+    color: rgb(173, 172, 172);
+    border: 1px solid rgb(240, 237, 237);
+    font-size: 15px;
+    text-align: center;
+    
+}
